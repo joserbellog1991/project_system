@@ -8,7 +8,7 @@ router.get("/",(req,res)=>{
     
     });
     
-    router.get("/:i",(req,res)=>{
+ router.get("/:i",(req,res)=>{
         const {i} = req.params;
         res.json({
             
@@ -18,14 +18,14 @@ router.get("/",(req,res)=>{
         
         });
     
-        router.post("/",(req,res)=>{
+router.post("/",(req,res)=>{
             const body = req.body;
             res.json({body});
             
             });
     
     
-            router.patch("/:i",(req,res)=>{
+router.patch("/:i",(req,res)=>{
                 const {i} = req.params;
                 const body = req.body;
                 res.json({
@@ -37,7 +37,7 @@ router.get("/",(req,res)=>{
     
     
     
-                router.delete("/:i",(req,res)=>{
+router.delete("/:i",(req,res)=>{
                     const {i} = req.params;
                     
                     res.json({
