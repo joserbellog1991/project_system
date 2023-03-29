@@ -42,7 +42,7 @@ router.get("/",(req,res)=>{
                     
                     res.json({
                         message:"id:"+i+" a sido eliminado",
-                    data: body
+                   
                     });
                     
                     });

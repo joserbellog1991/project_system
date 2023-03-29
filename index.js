@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const apiRouters = require("./routes/apiRouters");
-const port = process.env.port || 9000;
+const port = process.env.PORT || 9000;
 app.use(express.json());
  
 app.get("/",(req,res)=>{
